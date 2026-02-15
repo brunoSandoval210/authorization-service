@@ -6,7 +6,9 @@ target/
 logs/
 .env
 
+
 ### STS ###
+src/main/resources/application.properties
 .apt_generated
 .classpath
 .factorypath
