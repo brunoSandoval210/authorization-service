@@ -1,0 +1,248 @@
+2026-02-15 13:36:13.788 [background-preinit] INFO  o.h.validator.internal.util.Version - [] HV000001: Hibernate Validator 9.0.1.Final
+2026-02-15 13:36:13.846 [main] INFO  c.a.a.AutorizationModuleApplication - [] Starting AutorizationModuleApplication using Java 21.0.6 with PID 25904 (C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes started by bruno in C:\Users\bruno\Documents\Proyectos Spring\autorization)
+2026-02-15 13:36:13.847 [main] INFO  c.a.a.AutorizationModuleApplication - [] No active profile set, falling back to 1 default profile: "default"
+2026-02-15 13:36:14.885 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 13:36:14.990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Finished Spring Data repository scanning in 97 ms. Found 6 JPA repository interfaces.
+2026-02-15 13:36:15.758 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat initialized with port 8080 (http)
+2026-02-15 13:36:15.770 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:36:15.773 [main] INFO  o.a.catalina.core.StandardService - [] Starting service [Tomcat]
+2026-02-15 13:36:15.773 [main] INFO  o.a.catalina.core.StandardEngine - [] Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-15 13:36:15.841 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - [] Root WebApplicationContext: initialization completed in 1950 ms
+2026-02-15 13:36:16.058 [main] INFO  org.hibernate.orm.jpa - [] HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-15 13:36:16.102 [main] INFO  org.hibernate.orm.core - [] HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-15 13:36:16.491 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 13:36:16.521 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Starting...
+2026-02-15 13:36:16.726 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@239d9cb7
+2026-02-15 13:36:16.728 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Start completed.
+2026-02-15 13:36:16.821 [main] INFO  o.hibernate.orm.connections.pooling - [] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/autorization_db?options=-c%20TimeZone=America/Lima]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.4
+	Default catalog/schema: autorization_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 13:36:17.684 [main] INFO  org.hibernate.orm.core - [] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 13:36:17.896 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:36:17.999 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - [] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 13:36:18.163 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - [] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditLogAspect' defined in file [C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes\com\autorization\autorization\audit\adapter\in\aop\AuditLogAspect.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-15 13:36:18.163 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:36:18.166 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown initiated...
+2026-02-15 13:36:18.168 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown completed.
+2026-02-15 13:36:18.172 [main] INFO  o.a.catalina.core.StandardService - [] Stopping service [Tomcat]
+2026-02-15 13:36:18.180 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - [] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-15 13:36:18.199 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.autorization.autorization.audit.adapter.in.aop.AuditLogAspect required a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' in your configuration.
+
+2026-02-15 13:38:50.681 [background-preinit] INFO  o.h.validator.internal.util.Version - [] HV000001: Hibernate Validator 9.0.1.Final
+2026-02-15 13:38:50.752 [main] INFO  c.a.a.AutorizationModuleApplication - [] Starting AutorizationModuleApplication using Java 21.0.6 with PID 28704 (C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes started by bruno in C:\Users\bruno\Documents\Proyectos Spring\autorization)
+2026-02-15 13:38:50.753 [main] INFO  c.a.a.AutorizationModuleApplication - [] No active profile set, falling back to 1 default profile: "default"
+2026-02-15 13:38:51.674 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 13:38:51.783 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Finished Spring Data repository scanning in 101 ms. Found 6 JPA repository interfaces.
+2026-02-15 13:38:52.479 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat initialized with port 8080 (http)
+2026-02-15 13:38:52.489 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:38:52.491 [main] INFO  o.a.catalina.core.StandardService - [] Starting service [Tomcat]
+2026-02-15 13:38:52.492 [main] INFO  o.a.catalina.core.StandardEngine - [] Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-15 13:38:52.549 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - [] Root WebApplicationContext: initialization completed in 1752 ms
+2026-02-15 13:38:52.741 [main] INFO  org.hibernate.orm.jpa - [] HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-15 13:38:52.781 [main] INFO  org.hibernate.orm.core - [] HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-15 13:38:53.158 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 13:38:53.182 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Starting...
+2026-02-15 13:38:53.339 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10830d50
+2026-02-15 13:38:53.341 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Start completed.
+2026-02-15 13:38:53.400 [main] INFO  o.hibernate.orm.connections.pooling - [] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/autorization_db?options=-c%20TimeZone=America/Lima]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.4
+	Default catalog/schema: autorization_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 13:38:54.246 [main] INFO  org.hibernate.orm.core - [] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 13:38:54.326 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:38:54.422 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - [] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 13:38:54.559 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - [] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditLogAspect' defined in file [C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes\com\autorization\autorization\audit\adapter\in\aop\AuditLogAspect.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-15 13:38:54.559 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:38:54.561 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown initiated...
+2026-02-15 13:38:54.565 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown completed.
+2026-02-15 13:38:54.568 [main] INFO  o.a.catalina.core.StandardService - [] Stopping service [Tomcat]
+2026-02-15 13:38:54.579 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - [] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-15 13:38:54.601 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.autorization.autorization.audit.adapter.in.aop.AuditLogAspect required a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' in your configuration.
+
+2026-02-15 13:39:50.542 [background-preinit] INFO  o.h.validator.internal.util.Version - [] HV000001: Hibernate Validator 9.0.1.Final
+2026-02-15 13:39:50.578 [main] INFO  c.a.a.AutorizationModuleApplication - [] Starting AutorizationModuleApplication using Java 21.0.6 with PID 13952 (C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes started by bruno in C:\Users\bruno\Documents\Proyectos Spring\autorization)
+2026-02-15 13:39:50.579 [main] INFO  c.a.a.AutorizationModuleApplication - [] No active profile set, falling back to 1 default profile: "default"
+2026-02-15 13:39:51.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 13:39:51.732 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Finished Spring Data repository scanning in 83 ms. Found 6 JPA repository interfaces.
+2026-02-15 13:39:52.352 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat initialized with port 8080 (http)
+2026-02-15 13:39:52.363 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:39:52.364 [main] INFO  o.a.catalina.core.StandardService - [] Starting service [Tomcat]
+2026-02-15 13:39:52.364 [main] INFO  o.a.catalina.core.StandardEngine - [] Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-15 13:39:52.413 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - [] Root WebApplicationContext: initialization completed in 1805 ms
+2026-02-15 13:39:52.628 [main] INFO  org.hibernate.orm.jpa - [] HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-15 13:39:52.708 [main] INFO  org.hibernate.orm.core - [] HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-15 13:39:53.070 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 13:39:53.099 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Starting...
+2026-02-15 13:39:53.262 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c6fc4cd
+2026-02-15 13:39:53.264 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Start completed.
+2026-02-15 13:39:53.341 [main] INFO  o.hibernate.orm.connections.pooling - [] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/autorization_db?options=-c%20TimeZone=America/Lima]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.4
+	Default catalog/schema: autorization_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 13:39:54.222 [main] INFO  org.hibernate.orm.core - [] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 13:39:54.303 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:39:54.396 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - [] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 13:39:54.537 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - [] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'auditLogAspect' defined in file [C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes\com\autorization\autorization\audit\adapter\in\aop\AuditLogAspect.class]: Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-15 13:39:54.537 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:39:54.538 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown initiated...
+2026-02-15 13:39:54.541 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown completed.
+2026-02-15 13:39:54.544 [main] INFO  o.a.catalina.core.StandardService - [] Stopping service [Tomcat]
+2026-02-15 13:39:54.550 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - [] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-15 13:39:54.566 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.autorization.autorization.audit.adapter.in.aop.AuditLogAspect required a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.jackson.databind.ObjectMapper' in your configuration.
+
+2026-02-15 13:40:23.557 [background-preinit] INFO  o.h.validator.internal.util.Version - [] HV000001: Hibernate Validator 9.0.1.Final
+2026-02-15 13:40:23.590 [main] INFO  c.a.a.AutorizationModuleApplication - [] Starting AutorizationModuleApplication using Java 21.0.6 with PID 28000 (C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes started by bruno in C:\Users\bruno\Documents\Proyectos Spring\autorization)
+2026-02-15 13:40:23.591 [main] INFO  c.a.a.AutorizationModuleApplication - [] No active profile set, falling back to 1 default profile: "default"
+2026-02-15 13:40:24.234 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 13:40:24.313 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2026-02-15 13:40:24.844 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat initialized with port 8080 (http)
+2026-02-15 13:40:24.862 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:40:24.863 [main] INFO  o.a.catalina.core.StandardService - [] Starting service [Tomcat]
+2026-02-15 13:40:24.863 [main] INFO  o.a.catalina.core.StandardEngine - [] Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-15 13:40:24.909 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - [] Root WebApplicationContext: initialization completed in 1285 ms
+2026-02-15 13:40:25.097 [main] INFO  org.hibernate.orm.jpa - [] HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-15 13:40:25.137 [main] INFO  org.hibernate.orm.core - [] HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-15 13:40:25.498 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 13:40:25.528 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Starting...
+2026-02-15 13:40:25.668 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@462f8fe9
+2026-02-15 13:40:25.669 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Start completed.
+2026-02-15 13:40:25.726 [main] INFO  o.hibernate.orm.connections.pooling - [] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/autorization_db?options=-c%20TimeZone=America/Lima]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.4
+	Default catalog/schema: autorization_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 13:40:26.611 [main] INFO  org.hibernate.orm.core - [] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 13:40:26.687 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:40:26.774 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - [] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 13:40:28.094 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - [] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 13:40:28.201 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [] Global AuthenticationManager configured with UserDetailsService bean with name domainUserDetailsService
+2026-02-15 13:40:28.802 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Starting ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:40:28.816 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat started on port 8080 (http) with context path '/'
+2026-02-15 13:40:28.822 [main] INFO  c.a.a.AutorizationModuleApplication - [] Started AutorizationModuleApplication in 5.617 seconds (process running for 6.15)
+2026-02-15 13:40:28.824 [main] INFO  c.a.a.s.i.logging.LogStartupRunner - [] Directorio de logs existe: C:\Users\bruno\Documents\Proyectos Spring\autorization\logs
+2026-02-15 13:40:28.951 [main] INFO  c.a.a.s.i.logging.LogStartupRunner - [] LogControl asegurado para hoy: logs/application-2026-02-15.log
+2026-02-15 13:40:50.258 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - [] Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 13:40:50.262 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - [] Graceful shutdown complete
+2026-02-15 13:40:50.267 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:40:50.269 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown initiated...
+2026-02-15 13:40:50.274 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Shutdown completed.
+2026-02-15 13:41:00.749 [background-preinit] INFO  o.h.validator.internal.util.Version - [] HV000001: Hibernate Validator 9.0.1.Final
+2026-02-15 13:41:00.796 [main] INFO  c.a.a.AutorizationModuleApplication - [] Starting AutorizationModuleApplication using Java 21.0.6 with PID 23828 (C:\Users\bruno\Documents\Proyectos Spring\autorization\target\classes started by bruno in C:\Users\bruno\Documents\Proyectos Spring\autorization)
+2026-02-15 13:41:00.797 [main] INFO  c.a.a.AutorizationModuleApplication - [] No active profile set, falling back to 1 default profile: "default"
+2026-02-15 13:41:01.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 13:41:01.702 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [] Finished Spring Data repository scanning in 91 ms. Found 6 JPA repository interfaces.
+2026-02-15 13:41:02.415 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat initialized with port 8080 (http)
+2026-02-15 13:41:02.426 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:41:02.429 [main] INFO  o.a.catalina.core.StandardService - [] Starting service [Tomcat]
+2026-02-15 13:41:02.429 [main] INFO  o.a.catalina.core.StandardEngine - [] Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-15 13:41:02.495 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - [] Root WebApplicationContext: initialization completed in 1660 ms
+2026-02-15 13:41:02.694 [main] INFO  org.hibernate.orm.jpa - [] HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-15 13:41:02.738 [main] INFO  org.hibernate.orm.core - [] HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-15 13:41:03.083 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - [] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 13:41:03.110 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Starting...
+2026-02-15 13:41:03.286 [main] INFO  com.zaxxer.hikari.pool.HikariPool - [] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6493f780
+2026-02-15 13:41:03.288 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] HikariPool-1 - Start completed.
+2026-02-15 13:41:03.346 [main] INFO  o.hibernate.orm.connections.pooling - [] HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/autorization_db?options=-c%20TimeZone=America/Lima]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.4
+	Default catalog/schema: autorization_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 13:41:04.211 [main] INFO  org.hibernate.orm.core - [] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 13:41:04.286 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 13:41:04.376 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - [] Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 13:41:05.623 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - [] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 13:41:05.722 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - [] Global AuthenticationManager configured with UserDetailsService bean with name domainUserDetailsService
+2026-02-15 13:41:06.336 [main] INFO  o.a.coyote.http11.Http11NioProtocol - [] Starting ProtocolHandler ["http-nio-8080"]
+2026-02-15 13:41:06.356 [main] INFO  o.s.boot.tomcat.TomcatWebServer - [] Tomcat started on port 8080 (http) with context path '/'
+2026-02-15 13:41:06.363 [main] INFO  c.a.a.AutorizationModuleApplication - [] Started AutorizationModuleApplication in 6.059 seconds (process running for 6.405)
+2026-02-15 13:41:06.366 [main] INFO  c.a.a.s.i.logging.LogStartupRunner - [] Directorio de logs existe: C:\Users\bruno\Documents\Proyectos Spring\autorization\logs
+2026-02-15 13:41:06.470 [main] INFO  c.a.a.s.i.logging.LogStartupRunner - [] LogControl asegurado para hoy: logs/application-2026-02-15.log
+2026-02-15 13:42:10.389 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-15 13:42:10.389 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - [] Initializing Servlet 'dispatcherServlet'
+2026-02-15 13:42:10.390 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - [] Completed initialization in 1 ms
+2026-02-15 13:42:11.301 [http-nio-8080-exec-8] INFO  o.s.api.AbstractOpenApiResource - [d9e00ca7-2531-4458-a28e-2ae1d54c9ce1] Init duration for springdoc-openapi is: 654 ms
+2026-02-15 13:42:48.941 [http-nio-8080-exec-10] INFO  c.a.a.a.a.services.AuthService - [424b7ebf-08cf-4d9e-b56c-383592975b5c] Inicio de sesión exitoso para email=admin@empresa.com
