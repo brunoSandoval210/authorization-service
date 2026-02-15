@@ -1,6 +1,6 @@
 # 🛡️ Authorization Module
 
-Microservicio de alto rendimiento para la gestión de Identidades y Accesos (IAM), construido con **Spring Boot 3.4+** y **Java 21**. Este módulo implementa una **Arquitectura Hexagonal (Ports & Adapters)** estricta para garantizar un desacoplamiento total entre las reglas de negocio, la capa de aplicación y la infraestructura.
+Microservicio de alto rendimiento para la gestión de Identidades y Accesos (IAM), construido con **Spring Boot 4.0.0 y **Java 21**. Este módulo implementa una **Arquitectura Hexagonal (Ports & Adapters)** estricta para garantizar un desacoplamiento total entre las reglas de negocio, la capa de aplicación y la infraestructura.
 
 ## 🏗️ Stack Tecnológico
 - **Core**: Java 21 & Spring Boot 4.0.0
